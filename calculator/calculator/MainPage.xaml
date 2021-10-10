@@ -19,24 +19,25 @@
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
         <Entry x:Name="rez" Text="0" TextColor="White" IsReadOnly="True" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4" HorizontalTextAlignment="End"/>
-        <Button x:Name="k1" Padding="0,0,104,0" Text="ac" CornerRadius="100" TextColor="Black" BackgroundColor="Gray" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"/>
-        <Button x:Name="k3" Text="c" CornerRadius="50" TextColor="Black" BackgroundColor="Gray" Grid.Column="2" Grid.Row="1"/>
-        <Button x:Name="k4" Text="/" CornerRadius="50" TextColor="White" BackgroundColor="Orange" Grid.Column="3" Grid.Row="1"/>
-        <Button x:Name="k5" Text="7" CornerRadius="50" TextColor="White" BackgroundColor="#2C2C2C" Grid.Column="0" Grid.Row="2"/>
-        <Button x:Name="k6" Text="8" CornerRadius="50" TextColor="White" BackgroundColor="#2C2C2C" Grid.Column="1" Grid.Row="2"/>
-        <Button x:Name="k7" Text="9" CornerRadius="50" TextColor="White" BackgroundColor="#2C2C2C" Grid.Column="2" Grid.Row="2"/>
-        <Button x:Name="k8" Text="*" CornerRadius="50" TextColor="White" BackgroundColor="Orange" Grid.Column="3" Grid.Row="2"/>
-        <Button x:Name="k9" Text="4" CornerRadius="50" TextColor="White" BackgroundColor="#2C2C2C" Grid.Column="0" Grid.Row="3"/>
-        <Button x:Name="k10" Text="5" CornerRadius="50" TextColor="White" BackgroundColor="#2C2C2C" Grid.Column="1" Grid.Row="3"/>
-        <Button x:Name="k11" Text="6" CornerRadius="50" TextColor="White" BackgroundColor="#2C2C2C" Grid.Column="2" Grid.Row="3"/>
-        <Button x:Name="k12" Text="-" CornerRadius="50" TextColor="White" BackgroundColor="Orange" Grid.Column="3" Grid.Row="3"/>
-        <Button x:Name="k13" Text="1" CornerRadius="50" TextColor="White" BackgroundColor="#2C2C2C" Grid.Column="0" Grid.Row="4"/>
-        <Button x:Name="k14" Text="2" CornerRadius="50" TextColor="White" BackgroundColor="#2C2C2C" Grid.Column="1" Grid.Row="4"/>
-        <Button x:Name="k15" Text="3" CornerRadius="50" TextColor="White" BackgroundColor="#2C2C2C" Grid.Column="2" Grid.Row="4"/>
-        <Button x:Name="k16" Text="+" CornerRadius="50" TextColor="White" BackgroundColor="Orange" Grid.Column="3" Grid.Row="4"/>
-        <Button x:Name="k17" Text="0" CornerRadius="50" TextColor="White" BackgroundColor="#2C2C2C" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2"/>
-        <Button x:Name="k19" Text="." CornerRadius="50" TextColor="White" BackgroundColor="#2C2C2C" Grid.Column="2" Grid.Row="5"/>
-        <Button x:Name="k20" Text="=" CornerRadius="50" TextColor="White" BackgroundColor="Orange" Grid.Column="3" Grid.Row="5"/>
+        <Button x:Name="kac" Clicked="kac_Clicked" Text="ac" CornerRadius="100" TextColor="Black" BackgroundColor="Gray" Grid.Column="0" Grid.Row="1"/>
+        <Button x:Name="kc" Clicked="kc_Clicked" Text="c" CornerRadius="50" TextColor="Black" BackgroundColor="Gray" Grid.Column="1" Grid.Row="1"/>
+        <Button x:Name="pm" Text="+/-" Clicked="pm_Clicked"  CornerRadius="50" TextColor="Black" BackgroundColor="Gray" Grid.Column="2" Grid.Row="1"/>
+        <Button x:Name="kplus" Text="+" Clicked="kplus_Clicked" CornerRadius="50" TextColor="White" BackgroundColor="Orange" Grid.Column="3" Grid.Row="4"/>
+        <Button x:Name="kmin" Text="-" Clicked="kplus_Clicked" CornerRadius="50" TextColor="White" BackgroundColor="Orange" Grid.Column="3" Grid.Row="3"/>
+        <Button x:Name="kumn" Text="*" Clicked="kplus_Clicked" CornerRadius="50" TextColor="White" BackgroundColor="Orange" Grid.Column="3" Grid.Row="2"/>
+        <Button x:Name="ksla" Text="/" Clicked="kplus_Clicked" CornerRadius="50" TextColor="White" BackgroundColor="Orange" Grid.Column="3" Grid.Row="1"/>
+        <Button x:Name="kcomma" Text="." Clicked="kcomma_Clicked" CornerRadius="50" TextColor="White" BackgroundColor="#2C2C2C" Grid.Column="2" Grid.Row="5"/>
+        <Button x:Name="kravno" Text="=" Clicked="kravno_Clicked" CornerRadius="50" TextColor="White" BackgroundColor="Orange" Grid.Column="3" Grid.Row="5"/>
+        <Button x:Name="k0" Clicked="k0_Clicked" Text="0" CornerRadius="50" TextColor="White" BackgroundColor="#2C2C2C" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2"/>
+        <Button x:Name="k1" Clicked="k0_Clicked" Text="1" CornerRadius="50" TextColor="White" BackgroundColor="#2C2C2C" Grid.Column="0" Grid.Row="4"/>
+        <Button x:Name="k2" Clicked="k0_Clicked" Text="2" CornerRadius="50" TextColor="White" BackgroundColor="#2C2C2C" Grid.Column="1" Grid.Row="4"/>
+        <Button x:Name="k3" Clicked="k0_Clicked" Text="3" CornerRadius="50" TextColor="White" BackgroundColor="#2C2C2C" Grid.Column="2" Grid.Row="4"/>
+        <Button x:Name="k4" Clicked="k0_Clicked" Text="4" CornerRadius="50" TextColor="White" BackgroundColor="#2C2C2C" Grid.Column="0" Grid.Row="3"/>
+        <Button x:Name="k5" Clicked="k0_Clicked"  Text="5" CornerRadius="50" TextColor="White" BackgroundColor="#2C2C2C" Grid.Column="1" Grid.Row="3"/>
+        <Button x:Name="k6" Clicked="k0_Clicked" Text="6" CornerRadius="50" TextColor="White" BackgroundColor="#2C2C2C" Grid.Column="2" Grid.Row="3"/>
+        <Button x:Name="k7" Clicked="k0_Clicked" Text="7" CornerRadius="50" TextColor="White" BackgroundColor="#2C2C2C" Grid.Column="0" Grid.Row="2"/>
+        <Button x:Name="k8" Clicked="k0_Clicked" Text="8" CornerRadius="50" TextColor="White" BackgroundColor="#2C2C2C" Grid.Column="1" Grid.Row="2"/>
+        <Button x:Name="k9" Clicked="k0_Clicked" Text="9" CornerRadius="50" TextColor="White" BackgroundColor="#2C2C2C" Grid.Column="2" Grid.Row="2"/>
     </Grid>
 
 </ContentPage>
